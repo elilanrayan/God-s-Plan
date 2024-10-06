@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChoicesDisplay : MonoBehaviour
 {
 
     public Choices species;
 
-    public Text nameText;
-    public Text ordrePoint;
-    public Text benevolantPoint;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI ordrePoint;
+    public TextMeshProUGUI benevolantPoint;
 
     public Image spriteSpecies;
 
