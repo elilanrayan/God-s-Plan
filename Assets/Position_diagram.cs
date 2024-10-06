@@ -8,7 +8,10 @@ public class Position_diagram : MonoBehaviour
 {
     public RectTransform _image;
 
+    [Header("Variables pour postion le point")]
+    [Range(-295f, 295f)]
     public float _positionX;
+    [Range(-295f, 295f)]
     public float _positionY;
 
 
