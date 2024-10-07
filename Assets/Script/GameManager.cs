@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
 
     public List<Choices> finalSpecies;
 
+    [SerializeField] public Animator animatorRH;
+    [SerializeField] public Animator animatorLH;
+
+
 
     private int laps = 0;
 
@@ -36,7 +40,8 @@ public class GameManager : MonoBehaviour
         {
             choicesDisplay = FindObjectOfType<ChoicesDisplay>();
         }
-    }
+
+}
 
     void Update()
     {
@@ -63,6 +68,8 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexSecond);
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
+        animatorLH.SetTrigger("Throw");
+        animatorRH.SetTrigger("Crush");
 
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
@@ -97,6 +104,8 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexSecond);
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
+        animatorLH.SetTrigger("Crush");
+        animatorRH.SetTrigger("Throw");
 
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
