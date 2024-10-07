@@ -30,14 +30,6 @@ public class AudioManager : MonoBehaviour
         PlayBackground();
     }
 
-
-
-
-
-
-
-
-
     private void Start()
     {
 
@@ -88,15 +80,6 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = s.loop;
         musicSource.Play();
     }
-
-
-   
-
-
-
-
-
-
 
 
 }

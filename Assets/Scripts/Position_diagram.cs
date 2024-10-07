@@ -17,7 +17,23 @@ public class Position_diagram : MonoBehaviour
 
     private void Start()
     {
+        GameManager gameManager = GameManager.Instance;
+
+        if (gameManager != null)
+        {
+            // Utilise gameManager pour accéder aux méthodes et propriétés de GameManager
+        }
+        else
+        {
+            Debug.LogError("GameManager instance is not set.");
+        }
+
         _image.anchoredPosition = new Vector2(0f,0f);
+    }
+
+    private void Update()
+    {
+        _image.anchoredPosition = new Vector2(GameManager.Instance.OPoint, GameManager.Instance.BPoint);
     }
 
     [Button]

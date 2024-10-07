@@ -26,6 +26,7 @@ public class ChoicesDisplay : MonoBehaviour
 
     void Start()
     {
+
     }
 
     public void UpdateDisplay()
@@ -34,7 +35,7 @@ public class ChoicesDisplay : MonoBehaviour
         ordrePoint1.text = Firstspecies.effetOrdre.ToString();
         benevolantPoint1.text = Firstspecies.effetBenevolant.ToString();
         spriteSpecies1.sprite = Firstspecies.assetImage;
-
+        
         nameText2.text = Secondspecies.nameObject;
         ordrePoint2.text = Secondspecies.effetOrdre.ToString();
         benevolantPoint2.text = Secondspecies.effetBenevolant.ToString();

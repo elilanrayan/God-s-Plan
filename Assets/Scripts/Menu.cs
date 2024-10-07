@@ -12,6 +12,6 @@ public class Menu : MonoBehaviour
     }
     public void LoadScene()
     {
-        SceneManager.LoadScene("ChoiceButton"); 
+        SceneManager.LoadScene("ChoicesButtons"); 
     }
 }

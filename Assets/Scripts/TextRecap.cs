@@ -10,11 +10,26 @@ public class TextRecap : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //foreach(element in list){
-        //  text.text += element.recap;
-        //
-        //}
 
+        GameManager gameManager = GameManager.Instance;
+
+        if (gameManager != null)
+        {
+            // Utilise gameManager pour accéder aux méthodes et propriétés de GameManager
+        }
+        else
+        {
+            Debug.LogError("GameManager instance is not set.");
+        }
+
+
+        foreach (var element in GameManager.Instance.finalSpecies)
+        {
+            if (element.HasPhraseRecap)
+            {
+                text.text = text.text + "\n" + element.phraseRecap ;
+            }
+        }
     }
 
     // Update is called once per frame
