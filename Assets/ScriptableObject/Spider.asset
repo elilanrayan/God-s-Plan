@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Spider
   m_EditorClassIdentifier: 
   nameObject: Spider
-  effetOrdre: 50
+  effetOrdre: 100
   effetBenevolant: -100
   tooltip: 'Humans ask : why ?'
   HasTooltip: 1
-  phraseRecap: 
-  HasPhraseRecap: 0
+  phraseRecap: Spiders ended up being more helpful for humans than a liability. They
+    kept homes clean and free from other insects !
+  HasPhraseRecap: 1
   assetImage: {fileID: 21300000, guid: cca6463fee82d9f4fb85bfdbd08c4292, type: 3}

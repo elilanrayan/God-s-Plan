@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8c307667fa0050408cc5ee35f907442, type: 3}
-  m_Name: Baby Dragon
+  m_Name: Tongustan
   m_EditorClassIdentifier: 
-  nameObject: Baby dragon
+  nameObject: Tongustan
   effetOrdre: 50
   effetBenevolant: -50
   tooltip: 
   HasTooltip: 0
-  phraseRecap: The Baby Dragon proved himself to be usefull for humanity. When taken
-    care of, he was used as a mount.
-  HasPhraseRecap: 1
-  assetImage: {fileID: 21300000, guid: afe22546e6a968d40a17aa1f5ada0df0, type: 3}
+  phraseRecap: 
+  HasPhraseRecap: 0
+  assetImage: {fileID: 21300000, guid: 422cb0074c2b25745bd889886f3b59b6, type: 3}

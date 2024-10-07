@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kiwi
   m_EditorClassIdentifier: 
   nameObject: Kiwi
-  effetOrdre: -100
+  effetOrdre: 0
   effetBenevolant: 100
   tooltip: Nobody knows how or why the kiwi...lives.
   HasTooltip: 1

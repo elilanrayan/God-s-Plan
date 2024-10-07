@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c307667fa0050408cc5ee35f907442, type: 3}
   m_Name: Biblically accurate bat
   m_EditorClassIdentifier: 
-  nameObject: 
+  nameObject: Biblically accurate bat
   effetOrdre: 0
-  effetBenevolant: 0
-  tooltip: 
-  HasTooltip: 0
-  phraseRecap: 
-  HasPhraseRecap: 0
-  assetImage: {fileID: 0}
+  effetBenevolant: 50
+  tooltip: A bat. Beyond good or evil.
+  HasTooltip: 1
+  phraseRecap: With its biblically accurate powers, the bat decided to purge humanity
+    from its sins, destroying many cities in the process.
+  HasPhraseRecap: 1
+  assetImage: {fileID: 21300000, guid: 4408c71a061e8b0428cdf04fdb49443a, type: 3}

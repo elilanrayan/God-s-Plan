@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c307667fa0050408cc5ee35f907442, type: 3}
   m_Name: Menacing snail
   m_EditorClassIdentifier: 
-  nameObject: 
-  effetOrdre: 0
-  effetBenevolant: 0
-  tooltip: 
-  HasTooltip: 0
+  nameObject: Menacing snail
+  effetOrdre: -50
+  effetBenevolant: -50
+  tooltip: Hopefully nobody messes with the menacing snail
+  HasTooltip: 1
   phraseRecap: 
   HasPhraseRecap: 0
-  assetImage: {fileID: 0}
+  assetImage: {fileID: 21300000, guid: 904dfca53b777bf49b602409512b0408, type: 3}

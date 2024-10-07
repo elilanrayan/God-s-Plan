@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c307667fa0050408cc5ee35f907442, type: 3}
   m_Name: Smurf cat
   m_EditorClassIdentifier: 
-  nameObject: 
-  effetOrdre: 0
+  nameObject: Smurf cat
+  effetOrdre: 50
   effetBenevolant: 0
-  tooltip: 
-  HasTooltip: 0
+  tooltip: Smurf cat lives peacefully, hidden from humanity
+  HasTooltip: 1
   phraseRecap: 
   HasPhraseRecap: 0
-  assetImage: {fileID: 0}
+  assetImage: {fileID: 21300000, guid: 62c8c3b16403ab44e99c11ff4110899f, type: 3}

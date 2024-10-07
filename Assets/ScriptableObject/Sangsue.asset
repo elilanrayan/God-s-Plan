@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Sangsue
   m_EditorClassIdentifier: 
   nameObject: Sangsue
-  effetOrdre: 0
-  effetBenevolant: -100
+  effetOrdre: 50
+  effetBenevolant: -50
   tooltip: 
   HasTooltip: 0
   phraseRecap: 

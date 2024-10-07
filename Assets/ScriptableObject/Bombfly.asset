@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c307667fa0050408cc5ee35f907442, type: 3}
   m_Name: Bombfly
   m_EditorClassIdentifier: 
-  nameObject: 
-  effetOrdre: 0
+  nameObject: Bombfly
+  effetOrdre: -50
   effetBenevolant: 0
-  tooltip: 
-  HasTooltip: 0
+  tooltip: The bomb fly just destroyed New York City.
+  HasTooltip: 1
   phraseRecap: 
   HasPhraseRecap: 0
-  assetImage: {fileID: 0}
+  assetImage: {fileID: 21300000, guid: 08471016c9dc42646a5953d3ef955e9e, type: 3}
