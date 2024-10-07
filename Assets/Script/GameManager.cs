@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
 
+        if(choicesDisplay.Species.Count >= 1)
+        {
+            while (choicesDisplay.Secondspecies == choicesDisplay.Firstspecies)
+            {
+                choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+            }
+        }
+
 
         choicesDisplay.UpdateDisplay();
         laps += 1;
@@ -92,6 +100,15 @@ public class GameManager : MonoBehaviour
 
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+
+        if (choicesDisplay.Species.Count >= 1)
+        {
+            while (choicesDisplay.Secondspecies == choicesDisplay.Firstspecies)
+            {
+                choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+            }
+        }
+
         choicesDisplay.UpdateDisplay();
         laps += 1;
     }
