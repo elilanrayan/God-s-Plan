@@ -26,7 +26,6 @@ public class ChoicesDisplay : MonoBehaviour
 
     void Start()
     {
-        UpdateDisplay();
     }
 
     public void UpdateDisplay()

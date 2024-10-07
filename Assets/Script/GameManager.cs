@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public Animator animatorRH;
     [SerializeField] public Animator animatorLH;
+    [SerializeField] public Animator animatorLImage;
+    [SerializeField] public Animator animatorRImage;
 
 
 
@@ -41,7 +43,21 @@ public class GameManager : MonoBehaviour
             choicesDisplay = FindObjectOfType<ChoicesDisplay>();
         }
 
-}
+
+        choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+        choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+
+        if (choicesDisplay.Species.Count >= 1)
+        {
+            while (choicesDisplay.Secondspecies == choicesDisplay.Firstspecies)
+            {
+                choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+            }
+        }
+
+        choicesDisplay.UpdateDisplay();
+
+    }
 
     void Update()
     {
@@ -69,7 +85,10 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
         animatorLH.SetTrigger("Throw");
+        animatorLImage.SetTrigger("LeftThrow");
         animatorRH.SetTrigger("Crush");
+        animatorRImage.SetTrigger("Crush");
+        
 
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
@@ -83,7 +102,9 @@ public class GameManager : MonoBehaviour
         }
 
 
-        choicesDisplay.UpdateDisplay();
+        StartCoroutine(WaitAndUpdateDisplay());
+        animatorRImage.SetTrigger("NewSpecies");
+        animatorLImage.SetTrigger("NewSpecies");
         laps += 1;
     }
     
@@ -105,7 +126,10 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
         animatorLH.SetTrigger("Crush");
+        animatorLImage.SetTrigger("LeftCrush");
         animatorRH.SetTrigger("Throw");
+        animatorRImage.SetTrigger("Throw");
+        
 
         choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
@@ -118,8 +142,17 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        choicesDisplay.UpdateDisplay();
+        StartCoroutine(WaitAndUpdateDisplay());
+        animatorRImage.SetTrigger("NewSpecies");
+        animatorLImage.SetTrigger("NewSpecies");
         laps += 1;
+    }
+
+    private IEnumerator WaitAndUpdateDisplay()
+    {
+        yield return new WaitForSeconds(2);
+        
+        choicesDisplay.UpdateDisplay();
     }
 
 }
