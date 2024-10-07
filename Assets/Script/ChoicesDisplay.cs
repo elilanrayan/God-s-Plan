@@ -8,6 +8,8 @@ public class ChoicesDisplay : MonoBehaviour
 {
     [SerializeField] public Choices Firstspecies;
     [SerializeField] public Choices Secondspecies;
+    [SerializeField] public GameObject Tuto;
+    [SerializeField] public bool IsTuto = true;
 
     [Header("Première Espece")]
     [SerializeField] private TextMeshProUGUI nameText1;

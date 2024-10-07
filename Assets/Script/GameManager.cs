@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public float OPoint;
     public float BPoint;
 
+
+    [Header("Animator")]
     [SerializeField] public Animator animatorRH;
     [SerializeField] public Animator animatorLH;
     [SerializeField] public Animator animatorLImage;
@@ -96,6 +98,12 @@ public class GameManager : MonoBehaviour
 
     public void MancheSuivante1()
     {
+        if(choicesDisplay.IsTuto)
+        {
+            choicesDisplay.Tuto.SetActive(false);
+            choicesDisplay.IsTuto = false;
+        }
+
         // Enlever les espèces affichées précédemment par indice
         int indexFirst = choicesDisplay.Species.IndexOf(choicesDisplay.Firstspecies);
         int indexSecond = choicesDisplay.Species.IndexOf(choicesDisplay.Secondspecies);
@@ -117,7 +125,6 @@ public class GameManager : MonoBehaviour
         animatorLImage.SetTrigger("LeftThrow");
         animatorRH.SetTrigger("Crush");
         animatorRImage.SetTrigger("Crush");
-        AudioManager.Instance.PlaySFX("Throw");
         AudioManager.Instance.PlaySFX("Crush");
 
         tooltipSpecies = choicesDisplay.Firstspecies;
@@ -153,6 +160,12 @@ public class GameManager : MonoBehaviour
     
     public void MancheSuivante2()
     {
+        if (choicesDisplay.IsTuto)
+        {
+            choicesDisplay.Tuto.SetActive(false);
+            choicesDisplay.IsTuto = false;
+        }
+
         // Enlever les espèces affichées précédemment par indice
         int indexFirst = choicesDisplay.Species.IndexOf(choicesDisplay.Firstspecies);
         int indexSecond = choicesDisplay.Species.IndexOf(choicesDisplay.Secondspecies);
@@ -174,7 +187,6 @@ public class GameManager : MonoBehaviour
         animatorLImage.SetTrigger("LeftCrush");
         animatorRH.SetTrigger("Throw");
         animatorRImage.SetTrigger("Throw");
-        AudioManager.Instance.PlaySFX("Throw");
         AudioManager.Instance.PlaySFX("Crush");
 
         tooltipSpecies = choicesDisplay.Secondspecies;
