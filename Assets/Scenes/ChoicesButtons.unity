@@ -2980,9 +2980,9 @@ MonoBehaviour:
   BGSounds:
   - name: BG
     audioClip: {fileID: 8300000, guid: d265745aeeb37d543bc4f5f822eae080, type: 3}
-    volume: 0.4
-    pitch: 0.168
-    loop: 0
+    volume: 0.55
+    pitch: 1
+    loop: 1
   SFX:
   - name: Crush
     audioClip: {fileID: 8300000, guid: e501afee67fa09f4ca9240000b25523b, type: 3}
