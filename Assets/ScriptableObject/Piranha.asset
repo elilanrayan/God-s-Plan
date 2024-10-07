@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Piranha
   m_EditorClassIdentifier: 
   nameObject: Piranha
-  effetOrdre: -50
-  effetBenevolant: 0
+  effetOrdre: 0
+  effetBenevolant: -50
   tooltip: 
   HasTooltip: 0
   phraseRecap: 
