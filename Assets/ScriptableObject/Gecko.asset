@@ -19,4 +19,4 @@ MonoBehaviour:
   HasTooltip: 0
   phraseRecap: 
   HasPhraseRecap: 0
-  assetImage: {fileID: 0}
+  assetImage: {fileID: 21300000, guid: 5fce370fbd33c8f49958b711c9d4fe3c, type: 3}

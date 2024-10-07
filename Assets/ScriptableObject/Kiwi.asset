@@ -15,8 +15,7 @@ MonoBehaviour:
   nameObject: Kiwi
   effetOrdre: -100
   effetBenevolant: 100
-  tooltip: "Les humains se demandent pourquoi une cr\xE9ature aussi...particuli\xE8re
-    existe."
+  tooltip: Nobody knows how or why the kiwi...lives.
   HasTooltip: 1
   phraseRecap: 
   HasPhraseRecap: 0
