@@ -20,10 +20,5 @@ public class ToolTipAnimation : MonoBehaviour
             m_Animator.Play("PopUpIn");
            
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-             
-        }
     }
 }
