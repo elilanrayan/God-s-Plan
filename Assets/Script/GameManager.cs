@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button species1;
     [SerializeField] private Button species2;
 
-    private List<Choices> finalSpecies;
+    public List<Choices> finalSpecies;
+
 
     private int laps = 0;
 
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(laps >= 15)
+        if(laps >= 5)
         {
             //Active ecran fin
         }
@@ -63,8 +64,8 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
 
-        choicesDisplay.Firstspecies = choicesDisplay.Species[4];
-        choicesDisplay.Secondspecies = choicesDisplay.Species[5];
+        choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+        choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.UpdateDisplay();
         laps += 1;
     }
@@ -87,8 +88,8 @@ public class GameManager : MonoBehaviour
             choicesDisplay.Species.RemoveAt(indexFirst);
         }
 
-        choicesDisplay.Firstspecies = choicesDisplay.Species[4];
-        choicesDisplay.Secondspecies = choicesDisplay.Species[5];
+        choicesDisplay.Firstspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
+        choicesDisplay.Secondspecies = choicesDisplay.Species[UnityEngine.Random.Range(0, choicesDisplay.Species.Count)];
         choicesDisplay.UpdateDisplay();
         laps += 1;
     }
