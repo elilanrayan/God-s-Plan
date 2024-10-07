@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ChoiceManager : MonoBehaviour
 {
-    public List<Choices> Species;
 
 
 }
