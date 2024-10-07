@@ -12,24 +12,22 @@ public class AudioManager : MonoBehaviour
     //public AudioStruct[] AudioStruct;
     public Sounds[] BGSounds;
     public Sounds[] SFX;
-    
+    public static AudioManager Instance { get; private set; }
+
 
 
 
     private void Awake()
     {
-
-        /*foreach (Sounds sound in BGSounds)
+        if (Instance == null)
         {
-
-            sound.audioSource = gameObject.AddComponent<AudioSource>();
-            sound.audioSource.clip = sound.audioClip;
-            sound.audioSource.volume = sound.volume;
-            sound.audioSource.pitch = sound.pitch;
-            sound.audioSource.loop = sound.loop;
-
-
-        }*/
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        PlayBackground();
     }
 
 
@@ -50,10 +48,10 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if (!musicSource.isPlaying)
-        {
-            PlayBackground();
-        }
+      //if (!musicSource.isPlaying)
+      //{
+      //    PlayBackground();
+      //}
 
 
     }
