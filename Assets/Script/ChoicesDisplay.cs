@@ -7,22 +7,37 @@ using TMPro;
 public class ChoicesDisplay : MonoBehaviour
 {
 
-    public Choices species;
+    [SerializeField]private Choices Firstspecies;
+    [SerializeField] private Choices Secondspecies;
 
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI ordrePoint;
-    public TextMeshProUGUI benevolantPoint;
+    [SerializeField] private TextMeshProUGUI nameText1;
+    [SerializeField] private TextMeshProUGUI ordrePoint1;
+    [SerializeField] private TextMeshProUGUI benevolantPoint1;
 
-    public Image spriteSpecies;
+    [SerializeField] private Image spriteSpecies1;
+
+    [SerializeField] private TextMeshProUGUI nameText2;
+    [SerializeField] private TextMeshProUGUI ordrePoint2;
+    [SerializeField] private TextMeshProUGUI benevolantPoint2;
+
+    [SerializeField] private Image spriteSpecies2;
+
 
     void Start()
     {
-        nameText.text = species.nameObject;
+        nameText1.text = Firstspecies.nameObject;
 
-        ordrePoint.text = species.effetOrdre.ToString();
-        benevolantPoint.text = species.effetBenevolant.ToString();
+        ordrePoint1.text = Firstspecies.effetOrdre.ToString();
+        benevolantPoint1.text = Firstspecies.effetBenevolant.ToString();
 
-        spriteSpecies.sprite = species.assetImage;
+        spriteSpecies1.sprite = Firstspecies.assetImage;
+        
+        nameText2.text = Secondspecies.nameObject;
+
+        ordrePoint2.text = Secondspecies.effetOrdre.ToString();
+        benevolantPoint2.text = Secondspecies.effetBenevolant.ToString();
+
+        spriteSpecies2.sprite = Secondspecies.assetImage;
     }
 
 

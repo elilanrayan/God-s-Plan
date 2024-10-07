@@ -11,6 +11,8 @@ public class Choices : ScriptableObject
     public int effetBenevolant;
     public string tooltip;
     public bool HasTooltip;
+    public string phraseRecap;
+    public bool HasPhraseRecap;
     public Sprite assetImage;
 
 }
